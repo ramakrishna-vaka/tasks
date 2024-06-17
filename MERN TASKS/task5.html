@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+        }
+        .container h2 {
+            text-align: center;
+            color: blue;
+        }
+        .container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .container table, .container table th, .container table td {
+            border: 1px solid #ccc;
+        }
+        .container table th, .container table td {
+            padding: 10px;
+            text-align: left;
+        }
+        .container table input, .container table select, .container table textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container table input[type="radio"] {
+            width: auto;
+        }
+        .container .languages {
+            display: flex;
+            gap: 10px;
+        }
+        .container .languages input {
+            width: auto;
+        }
+        .container .footer {
+            text-align: center;
+            padding-top: 10px;
+        }
+        .container .footer input[type="checkbox"] {
+            width: auto;
+        }
+        .container .footer a {
+            text-decoration: none;
+            color: blue;
+        }
+        .container .footer a:hover {
+            text-decoration: underline;
+        }
+        .container .footer button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container .footer button:hover {
+            background-color: #45a049;
+        }
+        .align-right {
+            text-align: right;
+        }
+        .bold-label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td class="bold-label">First Name</td>
+                <td><input type="text" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td class="bold-label">Last Name</td>
+                <td><input type="text" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td class="bold-label">Email</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td class="bold-label">Password</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td class="bold-label">Re-enter Password</td>
+                <td><input type="password" name="repassword" required></td>
+            </tr>
+            <tr>
+                <td class="bold-label">Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                </td>
+            </tr>
+            <tr>
+                <td class="bold-label">Age:</td>
+                <td><input type="number" name="age" required></td>
+            </tr>
+            <tr>
+                <td class="bold-label">Phone Number</td>
+                <td><input type="tel" name="phone" required></td>
+            </tr>
+            <tr>
+                <td class="bold-label">Address</td>
+                <td><textarea name="address" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td class="bold-label">State</td>
+                <td><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <td class="bold-label">Country</td>
+                <td>
+                    <select name="country" required>
+                        <option value="">Choose your country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="bold-label">Languages known</td>
+                <td class="languages">
+                    <input type="checkbox" name="languages" value="english"> English
+                    <input type="checkbox" name="languages" value="kannada"> Kannada
+                    <input type="checkbox" name="languages" value="hindi"> Hindi
+                    <input type="checkbox" name="languages" value="telugu"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declare" required style="width: 20px;"> Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="align-right">
+                  <a href="https://www.ethnus.com" style="margin-left: 400px;">Log in to Ethnus website</a>
+                </td>
+            </tr>
+        </table>
+        <div class="footer">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
